@@ -8,7 +8,12 @@
 
 
 			<div class="media">
-				<span class="badge badge-success">{{likeCount}} </span>People like this .
+				{{#if likeCount}}<span class="badge badge-success">{{likeCount}} </span>People like this .
+				{{/if}}
+
+				<h4 class="media-heading">
+					<a class="likebtn muted"><small>like</small></a>
+				</h4>
 			</div>
 		</div>
 	</div>

@@ -1,10 +1,11 @@
 <template name="home">
 	<div class="well well-large">
 		<label for="posttext">Update Status</label>
-		<input placeholder="What up !" class="input-xxlarge posttext" type="text" name="posttext" value="" id="posttext">
+		<input placeholder="Whats on your mind ?" class="input-xxlarge posttext" type="text" name="posttext" value="" id="posttext">
 	</div>
-
-	<ul id ="postlist" class="unstyled">
+	<ul id="postList" class="unstyled">
+		{{#each posts}}
 		{{>post}}
-	 </ul>
+		{{/each}}
+	</ul>
 </template>
