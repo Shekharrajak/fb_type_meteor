@@ -1,3 +1,3 @@
-Meteor.Router.add({
-  '/':'home'
-})
+Router.route('/', function () {
+  this.render('home');
+});
